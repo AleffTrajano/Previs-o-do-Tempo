@@ -6,12 +6,13 @@ export interface WeatherDatas{
     lat: number
   },
 
-  weather:
-  [
+  weather:[
+    {
     id: number,
     main: string,
     description: string,
     Icon: string
+    }
   ],
 
   base: string,
@@ -22,26 +23,26 @@ export interface WeatherDatas{
     temp_max: number;
     pressure: number;
     humidity: number;
-  },
-  visibility: number,
-  wind:{
-    speed: number,
-    deg: number,
-  },
+  };
+  visibility: number;
+  wind: {
+    speed: number;
+    deg: number;
+  };
   clouds:{
-    all: number,
+    all: number;
   },
   dt: number
   sys:{
-    type: number,
-    id: number,
-    country: number,
-    sunrise: number,
-    sunset: number
+    type: number;
+    id: number;
+    country: number;
+    sunrise: number;
+    sunset: number;
   },
-  timezone:number,
-  id:number,
-  name:string,
-  cod:number
+  timezone:number;
+  id:number;
+  name:string;
+  cod:number;
 
 }

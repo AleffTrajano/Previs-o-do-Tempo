@@ -8,7 +8,7 @@ import { Component, Input} from '@angular/core';
   styleUrls: []
 })
 export class WeatherCardComponent{
-  @Input() WeatherDatasInput!:WeatherDatas;
+  @Input() WeatherDatasInput!: WeatherDatas;
 
 //dados da previsão do tempo recebidos pelo component pai
   minTemperatureIcon = faTemperatureLow;
